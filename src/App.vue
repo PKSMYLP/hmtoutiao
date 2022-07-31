@@ -1,7 +1,8 @@
 <template>
-  <div>黑马头条
-    <i class="toutiao toutiao-wode"></i>
-    <van-button type="primary">主要按钮</van-button>
+  <div>
+    <router-view></router-view>
+    <!-- <h1>a的值是：{{ $store.state.a }}</h1>
+    <button @click="add">点击加1</button> -->
   </div>
 </template>
 
@@ -9,6 +10,4 @@
 export default {}
 </script>
 
-<style>
-
-</style>
+<style></style>

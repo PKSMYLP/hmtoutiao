@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     'postcss-pxtorem': {
-      rootValue: 37.5,
+      rootValue: ({ file }) => (/vant/.test(file) ? 37.5 : 75),
       propList: ['*']
     }
   }
