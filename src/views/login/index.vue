@@ -81,7 +81,7 @@ export default {
 
         this.$store.commit('CHANGE', token)
         // 跳转profile
-        this.$router.push('/profile')
+        this.$router.push('/my')
         this.$toast.success('登录成功')
       } catch (error) {
         // 细分失败
