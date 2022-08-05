@@ -17,5 +17,6 @@ export const login = (mobile, code) => {
 
 export const getCode = (mobile) =>
   request({
-    url: `/v1_0/sms/codes/${mobile}`
+    url: `/v1_0/sms/codes/${mobile}`,
+    method: 'DELETE'
   })
