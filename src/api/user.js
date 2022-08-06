@@ -20,3 +20,19 @@ export const getCode = (mobile) =>
     url: `/v1_0/sms/codes/${mobile}`,
     method: 'DELETE'
   })
+// 获取用户资料
+export const getUserInfoApi = () =>
+  request({
+    url: '/v1_0/user/profile'
+  })
+
+// 上传头像
+export const updateImgApi = (file) => {
+  const fm = new FormData()
+  fm.append('photo', file)
+  return request({
+    url: '/v1_0/user/photo',
+    method: 'PATCH',
+    data: fm
+  })
+}
